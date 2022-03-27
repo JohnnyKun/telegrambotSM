@@ -50,7 +50,7 @@ def hello_user(message):
 def hello_user(message):
         bot.send_message(message.chat.id, 'вызывается скамMACHINE(ОРЕЛ)')
 
-@bot.message_handler(text=['@Shrijayavardenepurakotte'])
+@bot.message_handler(text=['@'])
 def hello_user(message):
         bot.send_message(message.chat.id, 'вызывается суетолог')
 
@@ -95,13 +95,13 @@ def hello_user(message):
 
 @bot.message_handler(text=['setall'])
 def hello_user(message):
-        bot.send_message(message.chat.id, '@Shrijayavardenepurakotte @TadaNingen @TheMoonProds @Helen_matyash @letoijok @ZEUXMark @meri_ii @smrnv0 @lizi_lok @ivanbalalaka @')
+        bot.send_message(message.chat.id, '@@')
 
 
 @bot.message_handler(text=['Ребенок'])
 def hello_user(message):
-        bot.send_message(message.chat.id, '@Shrijayavardenepurakotte')
-photo = open(r'C:\Users\vasog\Pictures\apology.JPG', 'rb')
+        bot.send_message(message.chat.id, '@')
+photo = open(r'C:\Users\USER\Pictures\apology.JPG', 'rb')
 @bot.message_handler(text=['Извинись'])
 def hello_user(message):
     bot.send_photo(message.chat.id, photo)
